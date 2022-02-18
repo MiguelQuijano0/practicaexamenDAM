@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/degradado"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="133dp"
+        android:layout_height="108dp"
+        android:src="@drawable/logozateca"
+        />
+
+    <TextView
+        android:id="@+id/sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/inicia_sesion"
+        android:textColor="#03510A"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sesion"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/usuario"
+        android:textSize="23dp"
+        />
+
+    <EditText
+        android:id="@+id/editusuario"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/usuario"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:hint="@string/edit_usuario"
+        android:textColorHint="#000000" />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editusuario"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/contraseña"
+        android:textSize="23dp" />
+
+    <EditText
+        android:id="@+id/editcontraseña"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/contraseña"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:hint="@string/edit_contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+
+        />
+
+    <CheckBox
+        android:id="@+id/guardarcontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editcontraseña"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="#D61515"
+        android:checked="true"
+        android:text="@string/recordar_contraseña" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guardarcontraseña"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:onClick="correo"
+        android:text="@string/olvidar"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="196dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/editcontraseña"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="171dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:onClick="yes"
+        android:text="@string/entrar"
+        app:backgroundTint="@null" />>
+
+</RelativeLayout>
