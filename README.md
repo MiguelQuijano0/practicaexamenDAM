@@ -17,4 +17,4 @@ Android Studio - creacion de la plantilla
 
 ##  ✒️ Autores
 
-miguel Quijano [github](https://github.com/MiguelQuijano0 "profile")
+Miguel Quijano [github](https://github.com/MiguelQuijano0 "profile")
